@@ -15,7 +15,6 @@ k = AgglomerativeClustering(n_clusters=5)
 dis = k.fit(np.array(df1[['latitude', 'longitude']]))
 df1.loc[::, 'class']=k.labels_
 
-print ('HAHAHAHAHAHAHAHAHA')
 
 qda = QuadraticDiscriminantAnalysis()
 
